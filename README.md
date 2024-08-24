@@ -1,2 +1,2 @@
 # hackathon
-# hackathon
+MIET and Netology hackathon
