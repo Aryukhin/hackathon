@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection</title>
+</head>
+<body>
+    <h1>Fraud Detection</h1>
+
+    <!-- Форма для загрузки CSV-файла -->
+    <form action="/" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Upload CSV File</legend>
+            <input type="file" name="file" accept=".csv" required>
+            <input type="submit" value="Upload">
+        </fieldset>
+    </form>
+
+    <br>
+
+    <!-- Форма для ввода данных вручную -->
+    <form action="/" method="post">
+        <fieldset>
+            <legend>Enter Transaction Data</legend>
+            <label for="time">Time:</label>
+            <input type="text" id="time" name="time" required>
+            <br>
+            <label for="v1">V1:</label>
+            <input type="text" id="v1" name="v1" required>
+            <br>
+            <label for="v2">V2:</label>
+            <input type="text" id="v2" name="v2" required>
+            <br>
+            <label for="v3">V3:</label>
+            <input type="text" id="v3" name="v3" required>
+            <br>
+            <label for="v4">V4:</label>
+            <input type="text" id="v4" name="v4" required>
+            <br>
+            <label for="v5">V5:</label>
+            <input type="text" id="v5" name="v5" required>
+            <br>
+            <label for="v6">V6:</label>
+            <input type="text" id="v6" name="v6" required>
+            <br>
+            <label for="v7">V7:</label>
+            <input type="text" id="v7" name="v7" required>
+            <br>
+            <label for="v8">V8:</label>
+            <input type="text" id="v8" name="v8" required>
+            <br>
+            <label for="v9">V9:</label>
+            <input type="text" id="v9" name="v9" required>
+            <br>
+            <label for="v10">V10:</label>
+            <input type="text" id="v10" name="v10" required>
+            <br>
+            <label for="v11">V11:</label>
+            <input type="text" id="v11" name="v11" required>
+            <br>
+            <label for="v12">V12:</label>
+            <input type="text" id="v12" name="v12" required>
+            <br>
+            <label for="v13">V13:</label>
+            <input type="text" id="v13" name="v13" required>
+            <br>
+            <label for="v14">V14:</label>
+            <input type="text" id="v14" name="v14" required>
+            <br>
+            <label for="v15">V15:</label>
+            <input type="text" id="v15" name="v15" required>
+            <br>
+            <label for="v16">V16:</label>
+            <input type="text" id="v16" name="v16" required>
+            <br>
+            <label for="v17">V17:</label>
+            <input type="text" id="v17" name="v17" required>
+            <br>
+            <label for="v18">V18:</label>
+            <input type="text" id="v18" name="v18" required>
+            <br>
+            <label for="v19">V19:</label>
+            <input type="text" id="v19" name="v19" required>
+            <br>
+            <label for="v20">V20:</label>
+            <input type="text" id="v20" name="v20" required>
+            <br>
+            <label for="v21">V21:</label>
+            <input type="text" id="v21" name="v21" required>
+            <br>
+            <label for="v22">V22:</label>
+            <input type="text" id="v22" name="v22" required>
+            <br>
+            <label for="v23">V23:</label>
+            <input type="text" id="v23" name="v23" required>
+            <br>
+            <label for="v24">V24:</label>
+            <input type="text" id="v24" name="v24" required>
+            <br>
+            <label for="v25">V25:</label>
+            <input type="text" id="v25" name="v25" required>
+            <br>
+            <label for="v26">V26:</label>
+            <input type="text" id="v26" name="v26" required>
+            <br>
+            <label for="v27">V27:</label>
+            <input type="text" id="v27" name="v27" required>
+            <br>
+            <label for="v28">V28:</label>
+            <input type="text" id="v28" name="v28" required>
+            <br>
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" required>
+            <br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <br>
+
+    <!-- Отображение предсказания -->
+    {% if prediction is not none %}
+    <h2>Prediction: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
